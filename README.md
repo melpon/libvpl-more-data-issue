@@ -231,7 +231,7 @@ MFX_ERR_MORE_DATA: frame=3 decoded=82
 MFX_ERR_MORE_DATA: frame=4 decoded=82
 MFX_ERR_MORE_DATA: frame=5 decoded=82
 MFX_ERR_MORE_DATA: frame=6 decoded=82
-Decoded frame:     frame=7 decoded=83 (1280x720)        # Resume
+Decoded frame:     frame=7 decoded=83 (1280x720)        # Resumed
 Decoded frame:     frame=7 decoded=84 (1280x720)
 Decoded frame:     frame=7 decoded=85 (1280x720)
 Decoded frame:     frame=7 decoded=86 (1280x720)
@@ -271,7 +271,7 @@ MFX_ERR_MORE_DATA: frame=83 decoded=0
 MFX_ERR_MORE_DATA: frame=84 decoded=0
 MFX_ERR_MORE_DATA: frame=85 decoded=0
 MFX_ERR_MORE_DATA: frame=86 decoded=0
-Decoded frame:     frame=87 decoded=1 (904x508)         # (1)
+Decoded frame:     frame=87 decoded=1 (904x508)         # Works
 Decoded frame:     frame=87 decoded=2 (904x508)
 Decoded frame:     frame=87 decoded=3 (904x508)
 Decoded frame:     frame=87 decoded=4 (904x508)
@@ -394,7 +394,7 @@ MFX_ERR_MORE_DATA: frame=6 decoded=113
 MFX_ERR_MORE_DATA: frame=7 decoded=113
 MFX_ERR_MORE_DATA: frame=8 decoded=113
 MFX_ERR_MORE_DATA: frame=9 decoded=113
-Decoded frame:     frame=10 decoded=114 (1280x720)          # (2)
+Decoded frame:     frame=10 decoded=114 (1280x720)          # Works
 Decoded frame:     frame=11 decoded=115 (1280x720)
 Decoded frame:     frame=11 decoded=116 (1280x720)
 Decoded frame:     frame=11 decoded=117 (1280x720)
@@ -467,7 +467,7 @@ Decoded frame:     frame=75 decoded=182 (1280x720)
 Decoded frame:     frame=76 decoded=183 (1280x720)
 Failed to DecodeFrameAsync: syncp is null, sts=-14
 Failed to DecodeFrameAsync: syncp is null, sts=3
-Decoded frame:     frame=77 decoded=184 (904x508)           # (3)
+Decoded frame:     frame=77 decoded=184 (904x508)           # Works
 MFX_ERR_MORE_DATA: frame=78 decoded=184
 MFX_ERR_MORE_DATA: frame=79 decoded=184
 MFX_ERR_MORE_DATA: frame=80 decoded=184
@@ -539,7 +539,8 @@ Chroma subsampling                       : 4:2:0
 Bit depth                                : 8 bits
 Scan type                                : Progressive
 Color range                              : Limited
-
+```
+```
 $ mediainfo bin/frame_0076.h264 
 General
 Complete name                            : bin/frame_0076.h264
